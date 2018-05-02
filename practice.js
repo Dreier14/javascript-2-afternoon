@@ -16,7 +16,11 @@
 
 //Code here
 
-
+var me = {
+  name:"Adam",
+  age:"24",
+}
+me.name
 
 ////////// PROBLEM 2 //////////
 
@@ -27,7 +31,14 @@
 
 //Code here
 
-
+var favoriteThings = {
+  band: "The New Deal",
+  food:"Pizza",
+  person: "Nick",
+  book: "Of Mice and Men",
+  movie: "Forrest Gump",
+  holiday: "Fourth of July"
+};
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
@@ -35,14 +46,18 @@
 
 //Code here
 
-
+favoriteThings.car = "A6";
+favoriteThings.brand = "Tesla";
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
 
+
+//Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,14 +71,17 @@
 */
 
 //Code here
-
-
+var backPack ={ 
+};
+var item = "firstPocket";
+backPack[item]= "chapstick";
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+alert(backPack);
 
 
 
@@ -74,7 +92,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,6 +115,8 @@ var user2 = {
 */
 
 //Code Here
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -109,7 +129,14 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection ={
+ // alertHello: function(){
+ //  alert("hello");
+ // },                       this is an alternate way
+ // logHello: function(){
+ //   console.log("hello")
+ // }
+}
 
 
 /*
@@ -118,7 +145,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){alert("hello")}
+methodCollection.logHello = function(){console.log("hello")}
 
 
 /*
@@ -127,6 +155,8 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello()
+methodCollection.logHello()
 
 
 ////////// PROBLEM 6 //////////
@@ -137,6 +167,13 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name, birthday, ssn){
+  return {
+    name,
+    birthday,
+    ssn
+  }
+};
 
 
 
@@ -149,4 +186,9 @@ var user2 = {
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  const newCard = makeCard
+  return {cardNumber ,
+    expirationDate, 
+    FesecurityCode}
+} makeCard();
